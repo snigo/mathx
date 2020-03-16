@@ -1,7 +1,7 @@
 {
-  "name": "index-library-template",
+  "name": "@lost-types/mathx",
   "version": "0.1.0",
-  "description": "Index Library Template",
+  "description": "Mathx - extended Math object with additional valuable methods.",
   "main": "lib/index.js",
   "files": [
     "lib"
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/snigo/index-library-template.git"
+    "url": "git+https://github.com/snigo/mathx.git"
   },
   "author": "snigo <snigo.ogins@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/snigo/index-library-template/issues"
+    "url": "https://github.com/snigo/mathx/issues"
   },
-  "homepage": "https://github.com/snigo/index-library-template#readme",
+  "homepage": "https://github.com/snigo/mathx#readme",
   "devDependencies": {
     "@ampproject/rollup-plugin-closure-compiler": "latest",
     "@babel/cli": "latest",
