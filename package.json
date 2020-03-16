@@ -1,0 +1,41 @@
+{
+  "name": "index-library-template",
+  "version": "0.1.0",
+  "description": "Index Library Template",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint src/**",
+    "build": "rollup --config",
+    "prepublish": "npm run lint && npm run test && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snigo/index-library-template.git"
+  },
+  "author": "snigo <snigo.ogins@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/snigo/index-library-template/issues"
+  },
+  "homepage": "https://github.com/snigo/index-library-template#readme",
+  "devDependencies": {
+    "@ampproject/rollup-plugin-closure-compiler": "latest",
+    "@babel/cli": "latest",
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@rollup/plugin-node-resolve": "latest",
+    "babel-eslint": "latest",
+    "babel-jest": "latest",
+    "eslint": "latest",
+    "eslint-config-airbnb-base": "latest",
+    "eslint-plugin-import": "latest",
+    "eslint-plugin-jest": "latest",
+    "jest": "latest",
+    "rollup": "latest",
+    "rollup-plugin-babel": "latest"
+  }
+}
