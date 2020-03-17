@@ -1,6 +1,6 @@
 {
   "name": "@lost-types/mathx",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Mathx - extended Math object with additional valuable methods.",
   "main": "lib/index.js",
   "files": [
