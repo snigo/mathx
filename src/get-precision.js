@@ -26,7 +26,7 @@ function getPrecision(number) {
 
   if (sciRe.test(number)) {
     const [, numGroup = '', expGroup = 0] = number.match(sciRe);
-    return Math.abs(+expGroup - numGroup.length);
+    return numGroup.length - expGroup;
   }
 
   return 0;

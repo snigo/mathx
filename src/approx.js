@@ -12,6 +12,7 @@ import getPrecision from './get-precision';
  */
 function approx(a, b, delta = 0) {
   const precision = Math.max(getPrecision(a), getPrecision(b), getPrecision(delta));
+
   return +Math.abs(a - b).toFixed(precision) <= delta;
 }
 

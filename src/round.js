@@ -7,7 +7,7 @@
  *
  * @returns {number} Rounded number
  */
-function round(num, precision = 0) {
+function round(num, precision = 12) {
   return +(+(num * 10 ** precision).toFixed(0) * 10 ** -precision)
     .toFixed(precision < 0 ? 0 : precision);
 }
