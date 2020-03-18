@@ -1,6 +1,6 @@
 # MathX
 
-Extended Math object for JavaScript. Collection of useful math functions that I personally need almost on every occasion and that are lacking in standard Math object. The goal is not to gather every possible math function outthere, but rather keep it lightweight and only add stupidly obvious fuctions to this collection.
+Extended Math object for JavaScript. Collection of useful math functions that I personally need almost on every occasion and that are lacking in the standard [Math object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math). The goal is not to gather every possible missing math function out there, but rather keep it lightweight and only add stupidly obvious functions to this collection.
 
 ## Usage
 
@@ -13,6 +13,7 @@ In the terminal:
 
 Then in the module:
 ```js
+
 // JavaScript modules
 import MathX from '@lost-types/mathx';
 
@@ -35,13 +36,13 @@ The threshold for the function to enter the collection - I have to use it at lea
 
 #### `MathX.approx()`
 
-Checks if the first argument approximately equals to the second argument within delta, the third argument. Tries best to account for precision errors. Returns boolean.
+Checks if the first argument approximately equals to the second argument within delta, the third argument. Tries best to account for precision errors. Returns a boolean.
 
 | **Parameter** | **Type** | **Default value** | **Notes**                                      |
 |---------------|----------|-------------------|------------------------------------------------|
 | `a`           | `number` |                   |                                                |
 | `b`           | `number` |                   |                                                |
-| `delta`       | `number` | 0                 | Optional, default to 0                         |
+| `delta`       | `number` | 0                 | Optional, defaults to 0                        |
 
 ```js
 
@@ -56,7 +57,7 @@ MathX.approx(0.3, 0.2, 0.1); // true
 
 #### `MathX.getPrecision()`
 
-Calculates precision of provided number, including negative precision, aka number of trailing zeros of the integer
+Calculates precision of the provided number, including negative precision, aka number of trailing zeros of the integer
 
 | **Parameter** | **Type** | **Default value** | **Notes**                                      |
 |---------------|----------|-------------------|------------------------------------------------|
@@ -99,7 +100,7 @@ MathX.modulo(21, 4); // 1
 
 #### `MathX.random()`
 
-This one is super obvious and I know that many libraries has it, but still. Generates random number within range with certain precision. Negative precision will work as well. Returns generated number.
+This one is super obvious and I know that many libraries have it, but still. Generates random number within given range with certain precision. Negative precision will work as well. Returns generated number.
 
 | **Parameter** | **Type**  | **Default value** | **Notes**                                        |
 |---------------|-----------|-------------------|--------------------------------------------------|
@@ -119,7 +120,7 @@ MathX.random(); // 0.897057820671
 
 #### `MathX.round()`
 
-Another popular one. Similarly to _.round(), rounds number to certain precision. Negative precision will work as well. Digests strings if needed. Returns rounded number.
+Another popular one. Similarly to [_.round()](https://lodash.com/docs/4.17.15#round), rounds number to certain precision. Negative precision will work as well. Digests strings if needed. Returns a rounded number.
 
 | **Parameter** | **Type**  | **Default value** | **Notes**                                        |
 |---------------|-----------|-------------------|--------------------------------------------------|
@@ -137,13 +138,13 @@ MathX.round(23567, -5); // 0
 
 ```
 
-**Note unusual behavior:** while many would expect defaul precision to be 0, `MathX.round()` uses default precision of 12
+**Note unusual behavior:** while many would expect default precision to be 0, `MathX.round()` uses default precision of 12
 
 ***
 
 #### `MathX.toNumber()`
 
-Converts string or number to a certain precision. Understands percentage and **do not** coerses any other types into number.
+Converts string or number to a certain precision. Understands percentage and **do not** coerces any other types into number.
 
 | **Parameter** | **Type**  | **Default value** | **Notes**                                        |
 |---------------|-----------|-------------------|--------------------------------------------------|
