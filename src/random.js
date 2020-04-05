@@ -1,4 +1,4 @@
-import toNumber from './to-number';
+import round from './round';
 
 /**
  * @function random Generates random number within range with certain precision
@@ -8,7 +8,7 @@ import toNumber from './to-number';
  */
 function random(range = [0, 1], precision = 12) {
   const [min, max] = range;
-  return toNumber(min + Math.random() * (max - min), precision);
+  return round(min + Math.random() * (max - min), precision);
 }
 
 export default random;
